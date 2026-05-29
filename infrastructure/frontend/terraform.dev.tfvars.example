@@ -1,0 +1,13 @@
+# Example per-environment tfvars for Jenkins.
+# Copy to terraform.dev.tfvars (gitignored) or store as a Jenkins config file.
+# Jenkins plan stage looks for: terraform.<ENVIRONMENT>.tfvars
+
+aws_region         = "us-east-1"
+environment        = "dev"
+application        = "cdec-frontend"
+
+origin_domain_name = "my-bucket.s3.us-east-1.amazonaws.com"
+
+create_dns_zone  = false
+route53_zone_id  = "Z1234567890ABC"
+dns_record_name  = "www.example.com"

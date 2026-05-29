@@ -1,0 +1,16 @@
+# Copy to terraform.tfvars. Do not commit terraform.tfvars.
+
+aws_region         = "us-east-1"
+environment        = "dev"
+application        = "cdec-frontend"
+
+origin_domain_name = "my-bucket.s3.us-east-1.amazonaws.com"
+
+# origin_access_control_id = "E1234567890ABC"
+
+# cloudfront_aliases  = ["www.example.com"]
+# acm_certificate_arn = "arn:aws:acm:us-east-1:123456789012:certificate/..."
+
+create_dns_zone  = false
+route53_zone_id  = "Z1234567890ABC"
+dns_record_name  = "www.example.com"
