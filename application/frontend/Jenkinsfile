@@ -14,12 +14,12 @@ pipeline {
     parameters {
         string(
             name: 'S3_BUCKET',
-            defaultValue: '',
+            defaultValue: 'cdec-alpha-frontend-dev-frontend',
             description: 'S3 bucket name for the frontend (e.g. cdec-frontend-dev-frontend)'
         )
         string(
             name: 'CLOUDFRONT_DISTRIBUTION_ID',
-            defaultValue: '',
+            defaultValue: 'E2191Y8O3EGPFM',
             description: 'CloudFront distribution ID (e.g. E1234567890ABC)'
         )
         string(
