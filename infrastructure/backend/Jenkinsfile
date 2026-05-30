@@ -2,7 +2,8 @@
 // Requires: terraform, aws-backend-terraform credentials, terraform.tfvars and backend.hcl in TF_DIR
 
 pipeline {
-    agent any
+    agent { label 'ecs-agent' 
+    }
 
     environment {
         TF_DIR = 'infrastructure/backend'
